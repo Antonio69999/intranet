@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteBase /
+
+RewriteRule ^controleur/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([0-9]+)$ index.php?controleur=$1&action=$2&id=$3 [L,QSA]
